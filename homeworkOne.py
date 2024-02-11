@@ -43,7 +43,7 @@ def preprocess_text(text):
     # Remove numbers
     processedText = re.sub(r'\d+', '', processedText)
 
-    # Remove "reuters", "ap", "'s", 'washingtonpost', and singular letters from the text
+    # Remove unimportant and common words, and singular letters from the text
     processedText = processedText.replace("reuters", "")
     processedText = processedText.replace("ap", "")
     processedText = processedText.replace("'s ", "")
@@ -110,7 +110,7 @@ def homeworkOne():
                 count = label_count[1][word] + label_count[2][word] + label_count[3][word]
                 not_label_count[label][word] += count
 
-    # Computes the first term of the equation
+    # Computes the first term of the equation (log likelihood that a specific word is in a specific label)
     log_likelihoods = {}
     for label in label_count.keys():
         # each of these maps from word -> log-likelihood within the class 'label'
@@ -121,7 +121,7 @@ def homeworkOne():
             likelihood = numerator / denominator
             log_likelihoods[label][token] = math.log(likelihood)
 
-    # Computes the second term of the equation
+    # Computes the second term of the equation (log likelihood that a specific word is in any other label)
     log_likelihoodsSecondTerm = {}
     for label in label_count.keys():
         log_likelihoodsSecondTerm[label] = {}
