@@ -187,5 +187,57 @@ def homeworkOne():
         topic_indices = [topic[0] for topic in topics]
         print(f"Label {label} ({label_name}): {', '.join(map(str, topic_indices))}")
 
+    # Added in for the report
+    # countlabel0 = 0;
+    # countlabel1 = 0;
+    # countlabel2 = 0;
+    # countlabel3 = 0;
+    # for i in range(len(labels)):
+    #     if labels[i] == 0:
+    #         countlabel0 += 1
+    #     elif labels[i] == 1:
+    #         countlabel1 += 1
+    #     elif labels[i] == 2:
+    #         countlabel2 += 1
+    #     else:
+    #         countlabel3 += 1
+    # # Get the total word count for each of the labels
+    # totalCountLabel0 = 0
+    # totalCountLabel1 = 0
+    # totalCountLabel2 = 0
+    # totalCountLabel3 = 0
+    # for label, word_counts in label_count.items():
+    #     if label == 0:
+    #         totalCountLabel0 = sum(word_counts.values())
+    #     elif label == 1:
+    #         totalCountLabel1 = sum(word_counts.values())
+    #     elif label == 2:
+    #         totalCountLabel2 = sum(word_counts.values())
+    #     else:
+    #         totalCountLabel3 = sum(word_counts.values())
+    #
+    # print("\n")
+    # print("Total headlines in each category:")
+    # print("Label 0 " + "(" + label_names[0] + ") count: " + str(countlabel0))
+    # print("Label 1 " + "(" + label_names[1] + ") count: " + str(countlabel1))
+    # print("Label 2 " + "(" + label_names[2] + ") count: " + str(countlabel2))
+    # print("Label 3 " + "(" + label_names[3] + ") count: " + str(countlabel3))
+    # print("\n")
+    #
+    # print("Total word count in each category:")
+    # print("Label 0 " + "(" + label_names[0] + ") count: " + str(totalCountLabel0))
+    # print("Label 1 " + "(" + label_names[1] + ") count: " + str(totalCountLabel1))
+    # print("Label 2 " + "(" + label_names[2] + ") count: " + str(totalCountLabel2))
+    # print("Label 3 " + "(" + label_names[3] + ") count: " + str(totalCountLabel3))
+    # print("\n")
+    #
+    # print("Average word count in each headline by category:")
+    # print("Label 0 " + "(" + label_names[0] + ") count: " + str(totalCountLabel0 / countlabel0))
+    # print("Label 1 " + "(" + label_names[1] + ") count: " + str(totalCountLabel1 / countlabel1))
+    # print("Label 2 " + "(" + label_names[2] + ") count: " + str(totalCountLabel2 / countlabel2))
+    # print("Label 3 " + "(" + label_names[3] + ") count: " + str(totalCountLabel3 / countlabel3))
+    # print("\n")
+    # End of code added in for the report
+
 if __name__ == "__main__":
     homeworkOne()
