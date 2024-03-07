@@ -9,7 +9,7 @@ Report for Homework1.pdf: Required file for submission of the assignment. Not ne
 homeworkOne.py: This file contains all of my code. Instructions to run it can be found below
 
 
-**Instructions for running homework0.py:**
+**Instructions for running homeworkOne.py:**
 
 I have provided a sample command that can be used to run this program below
 
